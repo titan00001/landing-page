@@ -3,3 +3,4 @@
 To-do:
 Add Bootstrap
 Make page responsive
+fix the image links
