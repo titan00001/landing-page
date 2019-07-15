@@ -1,5 +1,11 @@
 # landing-page
 
 To-do:
+Add Bootstrap
 
-fix the image links
+completed:
+fixed the image links
+
+
+status:
+bootstrap is being added to "adding-bootstrap" branch
