@@ -6,7 +6,7 @@ body {
 
 .quote {
     font-family: 'Tangerine', cursive;
-    font-size: 2rem;
+    font-size: 6vh;
     margin: 0;
     padding: 0 0 2% 0;
 }
@@ -14,7 +14,7 @@ body {
 h1 {
     color : #2c3e50;
     margin: 0;
-    font-size: 2rem;
+    font-size: 7vh;
     font-family: 'Righteous', cursive;
     padding: 2% 0 2% 0;
 }
@@ -64,17 +64,10 @@ h2 {
 .profile {
     background-color:  #fff7f7;
     text-align: center;
-    height: 95vh;
 }
 
-.about{
-    width: 200px;
-    grid-area: left;
-}
-
-.personal-data {
-    width: 200px;
-    grid-area: right;
+.profile h1 {
+    padding-top: 3%;
 }
 
 .personal-data p {
@@ -90,18 +83,8 @@ h2 {
     display: block;
 }
 
-.profile-image {
-    height: 150px;
-    width: 150px;
-    border-radius: 75%;
-    grid-area: main;
-}
-
 .profile-container {
-    display: grid;
-    grid-template-areas: 'left main right';
-    grid-gap: 5px;
-    padding: 5% 10% 1% 15%;
+   padding: 5% 10% 3% 15%;
 }
 
 .profile-foot {
@@ -117,6 +100,44 @@ h2 {
     color: aliceblue;
     height: 1.5rem;;
 }
+
+.profile-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 75%;
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    .profile-container {
+        padding: 5% 10% 1% 10%;
+     }
+
+    .personal-data p {
+        margin: 0;
+        padding: 2% 0;
+    }
+    
+    .personal-data p:last-child{
+        padding: 3% 0;
+    }
+    
+    .personal-data p span {
+        display: block;
+    }
+
+    .about, .personal-data {
+        margin: 0;
+        padding: 3% 0;
+    }
+
+    .profile-foot {
+        margin: 0;
+        padding-bottom: 4%;
+    }
+}
+
 
 /* Experience Section */
 .experience {
@@ -155,6 +176,11 @@ h2 {
     padding: 5% 0;
 }
 
+@media only screen and (max-width: 960px) {
+
+    
+
+}
 
 
 /* Abilities section */
@@ -169,11 +195,26 @@ h2 {
 }
 
 .tools,.skills {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 1% 0;
+
+    padding: 3% 0;
 }
 
+.tools > div > h2 {
+    padding: 3% 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .abilities h1 {
+        text-align: center;
+        padding: 3% 0 5% 0;
+    }
+
+    .tools > div:last-child {
+        padding: 3% 0;
+    }
+
+}
 
 /* Projects section */
 .projects {
@@ -184,37 +225,38 @@ h2 {
     
 }
 
-
 .project-item {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 20% 40% 40%;
-    padding: 0 15%;
-}
-
-.projects h1{
-    
-    padding-bottom: 2%; 
-}
-
-.project-title {
-    margin: 0%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding: 3%;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.project-item a {
-    padding: 5% 0;
+    margin: 0% 10%;
 }
 
 .project-image {
-    height:  150px;
-    width: 150px;
+    height:  200px;
+    width: 200px;
 }
 
+.projects h1 {
+    padding-bottom: 2%; 
+}
+
+.project-image-div, .project-title {
+    padding: 3% 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .project-image {
+        height: 300px;
+        width: 300px;
+    }
+
+    .project-image-div:last-child {
+        padding-bottom: 6%;
+    }
+    
+
+}
 
 /* Contacts section */
 .contacts {
@@ -242,4 +284,8 @@ h2 {
 }
 
 
+@media only screen and (max-width: 768px) {
 
+
+
+}
