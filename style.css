@@ -176,9 +176,32 @@ h2 {
     padding: 5% 0;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
 
-    
+    .course-description {
+        display: none;
+    }
+
+    .education-items, .course-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-name {
+        padding: 1% 0 2% 0;
+    }
+
+    .course-time {
+        padding: 3% 0;
+    }
+
+    .experience {
+        padding-left: 12vw;
+    }
+
+    .experience-header {
+        padding-bottom: 3%;
+    }
 
 }
 
