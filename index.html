@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--  Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=B612+Mono|Merriweather+Sans|Pacifico|Righteous|Tangerine&display=swap" rel="stylesheet">
+
+    <!--  Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--  Custom CSS -->
     <link rel="stylesheet" href="style.css" type="text/css">
     
 
@@ -11,15 +18,37 @@
     <title>Piyush Arya</title>
 </head>
 <body>
-    <!-- <nav class="main-nav"> 
-        <ul>
-            <li class="nav-items"><a href="#">Profile</a></li>
-            <li class="nav-items"><a href="#">Experience</a></li>
-            <li class="nav-items"><a href="#">Abilities</a></li>
-            <li class="nav-items"><a href="#">Project</a></li>
-            <li class="nav-items"><a href="#">Contacts</a></li>
-        </ul>
-    </nav> -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" class="main-nav">
+        <a class="navbar-brand" href="#">Piyush Arya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Abilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </nav>
 
     <section id="main">
         <div class="main">
@@ -29,32 +58,34 @@
     </section>
 
     <section id="profile">
-        <div class="profile">
-            <h1>Who am I</h1>
-            
-            <p>I create websites from scratch and knows a way or two to deal with data</p>
-            <div class="profile-container">
-                <div class="about">
-                    <h3>About Me</h3>
-                    <p>I am an entry-level web developer, currently working my way around learning process of designing websites and making them alive.
-                        I am currently learning to develop backend of wesites using nodejs.
-                    </p>
-                </div>
+            <div class="profile container-fluid">
+                <h1>Who am I</h1>
                 
-                <img class= "profile-image" src="images/profile.png" alt="profile">
-                
-                <div class="personal-data">
-                    <p> <span>Name</span> Piyush Arya </p>
-                    <p> <span>Age</span> 21 </p>
-                    <p> <span>Location</span> Kolkata,India </p>
-                    <p><button>Download CV</button></p>
+                <p class="quote">I create websites from scratch and knows a way or two to deal with data</p>
+                <div class="row profile-container">
+                    <div class="about col-md-4">
+                        <h3>About Me</h3>
+                        <p>I am an entry-level web developer, currently working my way around learning process of designing websites and making them alive.
+                            I am currently learning to develop backend of wesites using nodejs.
+                        </p>
+                    </div>
+                    
+                    <div class="col-md-4">
+                    <img class="profile-image" src="images/profile.png">
+                    </div>
+                    
+                    <div class="personal-data col-md-4">
+                        <p> <span>Name</span> Piyush Arya </p>
+                        <p> <span>Age</span> 21 </p>
+                        <p> <span>Location</span> Kolkata,India </p>
+                        <p><button>Download CV</button></p>
+                    </div>
                 </div>
+    
+                <p class="profile-foot">View my latest project on<button class="profile-foot-button">Github</button></p>
+    
             </div>
-
-            <p class="profile-foot">View my latest project on<button class="profile-foot-button">Github</button></p>
-
-        </div>
-    </section>
+        </section>
 
     <section id="experience">
         <div class="experience">
@@ -68,11 +99,11 @@
             <div id="Education">
                 <h2>Education</h2>
                 <div id="jadavpur" class="education-items">
-                    <div>
+                    <div class="course-insti-time">
                         <p class="course-institute">Jadavpur University</p>
                         <p class="course-time">july,2017-current</p>
                     </div>
-                    <div>
+                    <div class="course-name-desc">
                         <p class="course-name">Civil Engg</p>
                         <p  class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aut quos sed voluptas expedita dolor.</p>
                         <a href="#">Kolkata</a>
@@ -81,11 +112,11 @@
                 </div>
 
                 <div id="arcadia" class="education-items">
-                    <div>
+                    <div class="course-insti-time">
                         <p class="course-institute">Jadavpur University</p>
                         <p class="course-time">july,2017-current</p>
                     </div>
-                    <div>
+                    <div class="course-name-desc">
                         <p class="course-name">Civil Engg</p>
                         <p class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aut quos sed voluptas expedita dolor.</p>
                         <a href="#">Kolkata</a>
@@ -94,11 +125,11 @@
                 </div>
 
                 <div id="RNS" class="education-items">
-                    <div>
+                    <div class="course-insti-time">
                         <p class="course-institute">Jadavpur University</p>
                         <p class="course-time">july,2017-current</p>
                     </div>
-                    <div>
+                    <div class="course-name-desc">
                         <p class="course-name" class="course-name">Civil Engg</p>
                         <p class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aut quos sed voluptas expedita dolor.</p>
                         <a href="#">Kolkata</a>
@@ -113,11 +144,11 @@
                 <h2>Courses</h2>
                 
                 <div class="course-items">
-                    <div>
+                    <div class="course-insti-time">
                         <p class="course-institute">Web development</p>
                         <p class="course-time">june,2019 - present</p>
                     </div>
-                    <div>
+                    <div class="course-name-desc">
                         <p class="course-name">web dev bootcamp</p>
                         <p class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nemo ab voluptas pariatur. A, neque.</p>
                         <a href="#">udemy</a>
@@ -126,11 +157,11 @@
                 </div>
 
                 <div class="course-items">
-                    <div>
+                    <div class="course-insti-time">
                         <p class="course-institute">machine learning</p>
                         <p class="course-time">jan,2019 - feb,2019</p>
                     </div>
-                    <div>
+                    <div class="course-name-desc">
                         <p class="course-name">Machine learning by Andrew Ng</p>
                         <p class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nemo ab voluptas pariatur. A, neque.</p>
                         <a href="#">coursera</a>
@@ -145,84 +176,83 @@
 
 
     <section id="Abilites">
-        <div class="abilities">
+        <div class="abilities fluid-container">
             <h1>My Abilities</h1>
             
 
             <h2>Skills</h2>
 
-            <div class="skills">
+            <div class="skills row">
                 
-                <div>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>Html/Css</li>
-                        <li>Fortran</li>
-                        <li>Octave</li>
-                        <li>Nodejs</li>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">C</li>
+                        <li class="list-group-item">Html/Css</li>
+                        <li class="list-group-item">Fortran</li>
+                        <li class="list-group-item">Octave</li>
+                        <li class="list-group-item">Nodejs</li>
                     </ul>
 
                 </div>
 
-                <div>
-                    <ul>
-                        <li>Algorithms and Data Structures</li>
-                        <li>Game Design</li>
-                        <li>App development</li>
-                        <li>Deskptop App development</li>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Algorithms and Data Structures</li>
+                        <li class="list-group-item">Game Design</li>
+                        <li class="list-group-item">App development</li>
+                        <li class="list-group-item">Deskptop App development</li>
                         
                     </ul>
                 </div>
             </div>
 
 
-            <div class="tools">
-                <div>
+            <div class="tools row">
+                <div class="col-md-6">
                     <h2>Tools</h2>
-                    <ul>
-                        <li>Eclipse</li>
-                        <li>Vs Code</li>
-                        <li>Ubuntu</li>
-                        <li>AutoCAD</li>
-                        <li>Photoshop</li>
-                        <li>Android Studio</li>
+                    <ul class="list-group">
+                        <li class="list-group-item">Eclipse</li>
+                        <li class="list-group-item">Vs Code</li>
+                        <li class="list-group-item">Ubuntu</li>
+                        <li class="list-group-item">AutoCAD</li>
+                        <li class="list-group-item">Photoshop</li>
+                        <li class="list-group-item">Android Studio</li>
                     </ul>
                 </div>
 
-                <div>
+                <div class="col-md-6">
                     <h2>Frameworks</h2>
-                    <ul>
-                        <li>sqlite3</li>
-                        <li>pyQt5</li>
-                        <li>XAMMPS</li>
-                        <li>Express</li>
+                    <ul class="list-group">
+                        <li class="list-group-item">sqlite3</li>
+                        <li class="list-group-item">pyQt5</li>
+                        <li class="list-group-item">XAMMPS</li>
+                        <li class="list-group-item">Express</li>
                     </ul>
                 </div>
+                
             </div>
-
-
         </div>
     </section>
 
-
     <section id="projects">
-        <div class="projects">
+        <div class="projects container-fluid">
             <h1>My Projects</h1>
             
 
-            <div id="project-web-dev" class="project-item">
-                <p class="project-title">Web Development</p>
-                <a href="#"><img class="project-image" src="images/internet.jpg" alt="Project1" srcset=""></a>
-                <a href="#"><img class="project-image" src="images/seo.jpg" alt="Project2" srcset=""></a>
-                <a href="#"><img class="project-image" src="images/plans.jpg" alt="Project3" srcset=""></a>
-                <a href="#"><img class="project-image" src="images/list.png" alt="Project4" srcset=""></a>
-            </div>
+            <div id="project-web-dev" class="project-item row">
+                <div class="col-md-12"><p class="col-md-12 project-title">Web Development</p></div>
+                <div class="col-md-6 col-sm-12 project-image-div"><a href="#"><img class="project-image" src="images/list.png"></a></div>
+                <div class="col-md-6 col-sm-12 project-image-div"><a href="#"><img class="project-image" src="images/internet.jpg"></a></div>
+                <div class="col-md-6 col-sm-12 project-image-div"><a href="#"><img class="project-image" src="images/seo.jpg"></a></div>
+                <div class="col-md-6 col-sm-12 project-image-div"><a href="#"><img class="project-image" src="images/plans.jpg"></a></div>
+             </div>
 
         </div>
 
     </section>
+
 
     <section id="contacts">
         <div class="contacts"> 
@@ -235,6 +265,14 @@
             <a href="#">Medium</a>
         </div>
     </section>
+
+
+    <!-- jQuery for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>

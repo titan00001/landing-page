@@ -6,7 +6,7 @@ body {
 
 .quote {
     font-family: 'Tangerine', cursive;
-    font-size: 2rem;
+    font-size: 6vh;
     margin: 0;
     padding: 0 0 2% 0;
 }
@@ -14,7 +14,7 @@ body {
 h1 {
     color : #2c3e50;
     margin: 0;
-    font-size: 2rem;
+    font-size: 7vh;
     font-family: 'Righteous', cursive;
     padding: 2% 0 2% 0;
 }
@@ -27,30 +27,10 @@ h2 {
 
 
 /* Nav bar */
-.main-nav ul {
-    list-style-type: none;
-    background-color: #333;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+.main-nav {
+    position: fixed;
+    top: 0;
 }
-
-.nav-items {
-    
-    float: left;
-    border-right: 1px solid white;
-}
-
-.nav-items a {
-    display: block;
-    padding: 15% 20%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-     
-}
-
-
 
 /* main-section */
 .main {
@@ -65,17 +45,17 @@ h2 {
 
 .main h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 3.5rem;
+    font-size: 7vw;
     margin: 0;
-    padding-top: 10%;
-    padding-bottom: 15px;
+    padding-top: 30vh;
+    padding-bottom: 5%;
     color:  #e5e7e9;
 }
 
 .main p {
     margin: 0; 
     padding-bottom: 10%; 
-    font-size: 2.5rem;
+    font-size: 4vw;
 }
 
 /* Profile Section */
@@ -84,17 +64,10 @@ h2 {
 .profile {
     background-color:  #fff7f7;
     text-align: center;
-    height: 95vh;
 }
 
-.about{
-    width: 200px;
-    grid-area: left;
-}
-
-.personal-data {
-    width: 200px;
-    grid-area: right;
+.profile h1 {
+    padding-top: 3%;
 }
 
 .personal-data p {
@@ -110,18 +83,8 @@ h2 {
     display: block;
 }
 
-.profile-image {
-    height: 150px;
-    width: 150px;
-    border-radius: 75%;
-    grid-area: main;
-}
-
 .profile-container {
-    display: grid;
-    grid-template-areas: 'left main right';
-    grid-gap: 5px;
-    padding: 5% 10% 1% 15%;
+   padding: 5% 10% 3% 15%;
 }
 
 .profile-foot {
@@ -137,6 +100,44 @@ h2 {
     color: aliceblue;
     height: 1.5rem;;
 }
+
+.profile-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 75%;
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    .profile-container {
+        padding: 5% 10% 1% 10%;
+     }
+
+    .personal-data p {
+        margin: 0;
+        padding: 2% 0;
+    }
+    
+    .personal-data p:last-child{
+        padding: 3% 0;
+    }
+    
+    .personal-data p span {
+        display: block;
+    }
+
+    .about, .personal-data {
+        margin: 0;
+        padding: 3% 0;
+    }
+
+    .profile-foot {
+        margin: 0;
+        padding-bottom: 4%;
+    }
+}
+
 
 /* Experience Section */
 .experience {
@@ -175,6 +176,34 @@ h2 {
     padding: 5% 0;
 }
 
+@media only screen and (max-width: 768px) {
+
+    .course-description {
+        display: none;
+    }
+
+    .education-items, .course-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-name {
+        padding: 1% 0 2% 0;
+    }
+
+    .course-time {
+        padding: 3% 0;
+    }
+
+    .experience {
+        padding-left: 12vw;
+    }
+
+    .experience-header {
+        padding-bottom: 3%;
+    }
+
+}
 
 
 /* Abilities section */
@@ -189,11 +218,26 @@ h2 {
 }
 
 .tools,.skills {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 1% 0;
+
+    padding: 3% 0;
 }
 
+.tools > div > h2 {
+    padding: 3% 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .abilities h1 {
+        text-align: center;
+        padding: 3% 0 5% 0;
+    }
+
+    .tools > div:last-child {
+        padding: 3% 0;
+    }
+
+}
 
 /* Projects section */
 .projects {
@@ -204,46 +248,48 @@ h2 {
     
 }
 
-
 .project-item {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 20% 40% 40%;
-    padding: 0 15%;
-}
-
-.projects h1{
-    
-    padding-bottom: 2%; 
-}
-
-.project-title {
-    margin: 0%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding: 3%;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.project-item a {
-    padding: 5% 0;
+    margin: 0% 10%;
 }
 
 .project-image {
-    height:  150px;
-    width: 150px;
+    height:  200px;
+    width: 200px;
 }
 
+.projects h1 {
+    padding-bottom: 2%; 
+}
+
+.project-image-div, .project-title {
+    padding: 3% 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .project-image {
+        height: 300px;
+        width: 300px;
+    }
+
+    .project-image-div:last-child {
+        padding-bottom: 6%;
+    }
+    
+
+}
 
 /* Contacts section */
 .contacts {
     margin-top: 1%;
-    padding: 1% 0; 
+    padding: 1% 2% 0; 
     background-color: #204969;
     color: #c8dad3;
     text-align: center;
-    height: 20vh;
+    height: 30vh;
+    overflow: hidden;
 }
 
 .contacts h1 {
@@ -253,6 +299,7 @@ h2 {
 .contacts a {
     text-decoration: none;
     color: #c8dad3;
+    padding: 3%;
 }
 
 .contacts a:hover {
@@ -260,4 +307,8 @@ h2 {
 }
 
 
+@media only screen and (max-width: 768px) {
 
+
+
+}
