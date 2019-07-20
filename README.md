@@ -3,9 +3,26 @@
 To-do:
 Add Bootstrap
 
-completed:
-fixed the image links
+make web responsive to all viewport aptly
+improve typography in medium and small Viewport
+make experience section responsive
 
 
-status:
-bootstrap is being added to "adding-bootstrap" branch
+fix the links to target sections(javascript)
+
+
+Completed:
+
+nav bar styling
+made Home section responsive
+All section are responsive to small viewport
+Added Bootstrap
+
+
+Status:
+
+Bootstrap is being added in "adding-bootstrap" branch of this repo
+nav bar added
+All section are responsive to small viewport
+
+
